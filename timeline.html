@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang=en>
+    <head>
+
+    <title>План за развитие - документи</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/runningCal.css">
+    <script src="apps/apps.js"></script>
+    </head>
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+a.darkgreen {
+  color: rgb(238, 150, 150)
+}
+
+a.red {
+  color: rgb(233, 186, 186);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #b5c430;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+  .darkgreen {
+    background-color: green !important;
+    color: white;
+  }
+
+  .green {
+    background-color: greenyellow;
+  }
+
+  .blue {
+    background-color: rgb(154, 154, 216);
+  }
+
+  .orange {
+    background-color: orange;
+  }
+
+  .red {
+    background-color: hsl(0, 79%, 54%);
+  }
+
+   </style>
+
+    <body>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content darkgreen">
+                <h2>2016</h2>
+                <p>Белгия <a class = "darkgreen" href = "https://www.climatechangenews.com/2016/04/05/belgium-quits-coal-power-with-langerlo-plant-closure/">става седмата страна в ЕС</a>, която не ползва въглища в ел миска след Кипър, Естония, Латвия, Литва, Люксембург и Малта.</p>
+              </div>
+            </div>
+
+            <div class="container right ">
+              <div class="content darkgreen">
+                <h2>2020</h2>
+                <p>Австрия <a class = "darkgreen" href="https://caneurope.org/the-last-coal-plant-in-austria-shuts-down-leaving-only-seven-eu-member-states-without-plans-to-do-the-same-by-2030-deadline/">затваря последната си въглищна ТЕЦ</a>, последвана от Швеция, която <a class = "darkgreen" href="https://www.ecowatch.com/sweden-last-coal-plant-closes-2645853366.html">изпреварва плана си с две години</a>. </p>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="content green">
+                <h2>2021</h2>
+                <p>Португалия <a href = "https://www.euractiv.com/section/energy/news/portugal-on-track-to-become-coal-free-by-year-end/">спира последната централа през ноември</a>, две години пред плана си.</p>
+              </div>
+            </div>
+          
+
+            <div class="container right">
+              <div class="content green">
+                <h2>2022</h2>
+                <p>Франция <a href = "https://www.reuters.com/article/us-climatechange-france/france-to-end-sale-of-diesel-and-gasoline-vehicles-by-2040-idUSKBN19R0VZ">се отказва от въглищата</a>, намалява дела на ядрената енергия до 50% в 2025 и спира двигателите с вътрешно горене до 2040.</p>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="content green">
+                <h2>2023</h2>
+                <p>Словакия <a href = "https://ec.europa.eu/reform-support/supporting-transition-coal-energy-slovakia_pt"> има стратегия за отказ до 2030</a>, но правителството се ангажира с 2023 г.</p>
+              </div>
+            </div>
+
+          <div class="container right">
+            <div class="content green">
+              <h2>2024</h2>
+              <p>Великобритания <a href = "https://www.gov.uk/government/news/end-to-coal-power-brought-forward-to-october-2024">изтегля затварянето</a> с една година напред до октомври 2024.</p>
+            </div>
+          </div>
+
+          <div class="container left">
+            <div class="content green">
+              <h2>2025</h2>
+              <p><a href = "https://wwf.panda.org/wwf_news/?316290/WWF-celebrates-first-step-toward-decarbonization-as-Italy-aims-to-phase-out-coal-by-2025">Италия</a>, <a href='https://reneweconomy.com.au/ireland-to-replace-last-coal-plant-with-huge-green-hub-and-floating-wind-farm/'>Ирландия</a>, <a href = 'https://www.euractiv.com/section/climate-environment/news/hungary-brings-coal-exit-forward-by-five-years-to-2025/'>Унгария (изтеглена с 5 години)</a> и <a href = 'https://balkangreenenergynews.com/greece-pushes-coal-phaseout-deadline-to-2025-from-2028/'>Гърция (изтеглена с три години)</a>.</p>
+            </div>
+          </div>
+
+          <div class="container right">
+            <div class="content green">
+              <h2>2027</h2>
+              <p>Северна Македония <a href = "https://emerging-europe.com/news/north-macedonia-to-exit-coal-by-2027/">заменя последната ТЕЦ</a> със ПЧП соларен парк на мястото. Доскоро обсъждаха дати до 2040 г.</p>
+            </div>
+          </div>          
+
+          <div class="container left">
+            <div class="content green">
+              <h2>2028</h2>
+              <p>Дания <a href = "https://www.reuters.com/article/denmark-climatechange-idINL8N2DV11W">е заложила отказ през 2030 г.</a>, но последната ТЕЦ трябва да затвори две години по-рано. </p>
+            </div>
+          </div>  
+
+          <div class="container right">
+            <div class="content green">
+              <h2>2029</h2>
+              <p>Финландия <a href = "https://tem.fi/en/-/lakiehdotukset-kivihiilikielto-2029-lisaa-biopolttoaineita-liikenteeseen-seka-biopolttooljya-lammitykseen-ja-tyokoneisiin">забранява горенето на въглища за енергия от 1 май.</a> Реално затваряне може да се случи по-рано. Подобна <a href = 'https://www.reuters.com/article/us-netherlands-energy-coal-idUSKCN1IJ1PI'>забрана влиза в действие</a> и в Холандия</p>
+            </div>
+          </div>  
+
+          <div class="container left">
+            <div class="content green">
+              <h2>2030</h2>
+              <p>Испания <a href = "https://www.euractiv.com/section/energy/news/spain-joins-campaign-to-phase-out-coal-by-2030/">вероятно ще се откаже от ТЕЦ</a> доста преди целта 2030.</p>
+            </div>
+          </div>  
+
+          <div class="container right">
+            <div class="content orange">
+              <h2>2032</h2>
+              <p>Румъния <a href = "https://www.euractiv.com/section/energy/news/romania-will-phase-out-coal-by-2032/">приема датата</a> като част от плана за възстановяване.</p>
+            </div>
+          </div>  
+
+          <div class="container left">
+            <div class="content orange">
+              <h2>2033</h2>
+              <p>Словения <a href = "https://seenews.com/news/slovenia-to-complete-coal-phase-out-by-2033-govt-minister-753858">се спира на най-ранната от обсъжданите дати</a>. Вероятно е и <a href = 'https://www.euractiv.com/section/politics/short_news/slovenias-coal-power-plant-may-shut-down-earlier-than-expected/'>по-ранно затваряне</a> по пазарни съображения.</p>
+            </div>
+          </div>  
+
+          <div class="container right">
+            <div class="content orange">
+              <h2>2033-2038</h2>
+              <p>Чехия <a href = "https://www.reuters.com/article/czech-coal-idUSL5N2NB20Z">още обсъжда датата</a>. Правителствена комисия предлага 2038, съуправляваща партия - 2033, а ЕК настоява за по-ранната дата. ЧЕЗ твърдят, че ще затворят повечето мощности до 2030.</p>
+            </div>
+          </div>  
+
+          <div class="container left">
+            <div class="content orange">
+              <h2>2035-2038</h2>
+              <p>Германия <a href = "https://www.euractiv.com/section/energy/news/romania-will-phase-out-coal-by-2032/">заменя ТЕЦ с ВЕИ и газови централи</a>, като при напредък датата може да се изтегли до 3 години напред.</p>
+            </div>
+          </div>  
+
+          <div class="container right">
+            <div class="content red">
+              <h2>2035-2040</h2>
+              <p>България тепърва започва дискусия. Хърватия има една малка <a class = "red" href = 'https://balkangreenenergynews.com/bulgaria-croatia-romania-slovenia-plan-to-burn-coal-beyond-2030-report-on-final-necps/'> централа с лиценз до 2040 г.</a>, но няма въглищна енергия в стратегията си след 2035. Дискусия предстои.</p>
+            </div>
+          </div>  
+
+          <div class="container left ">
+            <div class="content red">
+              <h2>2049</h2>
+              <p>Полша <a class = "red" href = 'https://www.ft.com/content/6031bd28-5f7e-40ed-9e6d-aef34eade58d'>постепенно заменя ТЕЦ с АЕЦ.</a></p>
+            </div>
+          </div>  
+    </body>
+
+</html>
